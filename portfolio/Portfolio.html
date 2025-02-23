@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - SANJAY</title>
+  <style>
+    /* Reset and Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Main Container */
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 2rem auto;
+    }
+    section {
+      margin-bottom: 2rem;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #333;
+      padding-bottom: 0.5rem;
+    }
+
+    /* About Section */
+    #about p {
+      font-size: 1.1rem;
+    }
+
+    /* Skills Section */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skill {
+      flex: 1 1 calc(33% - 1rem);
+      background: #e2e2e2;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* Projects Section */
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .project {
+      flex: 1 1 calc(33% - 1rem);
+      background: #e2e2e2;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+
+    /* Resume Section */
+    .resume {
+      text-align: center;
+    }
+    .resume a {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    /* Contact Section */
+    #contact ul {
+      list-style: none;
+    }
+    #contact ul li {
+      margin-bottom: 0.5rem;
+    }
+    #contact ul li a {
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .skill, .project {
+        flex: 1 1 100%;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>SANJAY</h1>
+    <p style="padding-bottom: 20px">WEB DEVELOPER</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! Sanjay, a passionate and motivated web developer eager to learn and contribute to dynamic projects. I enjoy building responsive, user-friendly websites using HTML, CSS, and JavaScript. I am committed to growing my skills and delivering quality work.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">UI and UX</div>
+        <div class="skill">NoSQL</div>
+        <div class="skill">Problem Solving</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <div class="project">
+          <h3 style="padding-bottom: 10px;">Blood Bridge</h3>
+          <p>
+            The Blood Bridge project links donors, recipients, hospitals, and blood banks to ensure efficient, timely blood matches through location-based algorithms and status management.Which is build by using HTML,CSS and JavaScripte
+          </p>
+      </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <div class="resume">
+        <p>You can view or download my resume below:</p>
+        <a href="sanjay-resume.pdf" download target="_blank">Download Resume</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to get in touch with me via email or social media:</p>
+      <ul>
+        <li>Email : <a href="mailto: sanjayashwin18@gmail.com" target="blank">sanjayashwin18@gmail.com</a></a></li>
+        <li>LinkedIn : <a href="https://www.linkedin.com/in/sanjay-k-6187b8299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Sanjay LinkedIn profile</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 SANJAY. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
